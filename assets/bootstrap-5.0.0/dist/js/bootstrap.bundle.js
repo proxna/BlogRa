@@ -3000,8 +3000,8 @@
       return;
     }
 
-    var _options$mainAxis = options.mainAxis,
-        checkMainAxis = _options$mainAxis === void 0 ? true : _options$mainAxis,
+    var _options$main-colorAxis = options.mainAxis,
+        checkMainAxis = _options$main-colorAxis === void 0 ? true : _options$main-colorAxis,
         _options$altAxis = options.altAxis,
         checkAltAxis = _options$altAxis === void 0 ? true : _options$altAxis,
         specifiedFallbackPlacements = options.fallbackPlacements,
@@ -3265,8 +3265,8 @@
     var state = _ref.state,
         options = _ref.options,
         name = _ref.name;
-    var _options$mainAxis = options.mainAxis,
-        checkMainAxis = _options$mainAxis === void 0 ? true : _options$mainAxis,
+    var _options$main-colorAxis = options.mainAxis,
+        checkMainAxis = _options$main-colorAxis === void 0 ? true : _options$main-colorAxis,
         _options$altAxis = options.altAxis,
         checkAltAxis = _options$altAxis === void 0 ? false : _options$altAxis,
         boundary = options.boundary,

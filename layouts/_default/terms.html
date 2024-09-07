@@ -34,7 +34,7 @@
                         <div class="tags mb-3">
                         {{ range $i, $name := $names }}
                             {{ if hasPrefix $name $l }}
-                                <a href="{{ index $url $i }}" class="tag bg-dark">
+                                <a href="{{ index $url $i }}" class="tag bg-main">
                                     {{ replace $name "-" " " }} 
                                     <sup>({{ index $count $i }})</sup>
                                 </a>

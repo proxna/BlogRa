@@ -254,7 +254,7 @@
   .position-absolute {
     width: 2em;
     height: 2em;
-    background-color: $dark;
+    background-color: $main-color;
     @include border-radius();
   }
 }

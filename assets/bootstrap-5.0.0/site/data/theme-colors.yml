@@ -8,12 +8,12 @@
   hex: "#dc3545"
 - name: warning
   hex: "#ffc107"
-  contrast_color: dark
+  contrast_color: main
 - name: info
   hex: "#17a2b8"
-  contrast_color: dark
+  contrast_color: main
 - name: light
   hex: "#f8f9fa"
-  contrast_color: dark
-- name: dark
+  contrast_color: main
+- name: main
   hex: "#343a40"

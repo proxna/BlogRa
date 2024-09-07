@@ -23,7 +23,7 @@ See them in action and compare them in our [Grid example]({{< docsref "/examples
 <table class="table">
   <thead>
     <tr>
-      <td class="border-dark"></td>
+      <td class="border-main"></td>
       <th scope="col">
         Extra small<br>
         <span class="fw-normal">&lt;576px</span>

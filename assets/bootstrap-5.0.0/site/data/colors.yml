@@ -22,5 +22,5 @@
   hex: "#fff"
 - name: gray
   hex: "#6c757d"
-- name: gray-dark
+- name: gray-main
   hex: "#343a40"

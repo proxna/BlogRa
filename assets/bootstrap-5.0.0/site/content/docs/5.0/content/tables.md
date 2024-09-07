@@ -82,7 +82,7 @@ Use `.table-striped` to add zebra-striping to any table row within the `<tbody>`
 
 These classes can also be added to table variants:
 
-{{< table class="table table-dark table-striped" >}}
+{{< table class="table table-main table-striped" >}}
 
 {{< table class="table table-success table-striped" >}}
 
@@ -92,7 +92,7 @@ Add `.table-hover` to enable a hover state on table rows within a `<tbody>`.
 
 {{< table class="table table-hover" >}}
 
-{{< table class="table table-dark table-hover" >}}
+{{< table class="table table-main table-hover" >}}
 
 These hoverable rows can also be combined with the striped variant:
 
@@ -156,7 +156,7 @@ Highlight a table row or cell by adding a `.table-active` class.
 ```
 
 <div class="bd-example">
-  <table class="table table-dark">
+  <table class="table table-main">
     <thead>
       <tr>
         <th scope="col">#</th>
@@ -188,7 +188,7 @@ Highlight a table row or cell by adding a `.table-active` class.
 </div>
 
 ```html
-<table class="table table-dark">
+<table class="table table-main">
   <thead>
     ...
   </thead>
@@ -215,7 +215,7 @@ For the accented tables ([striped rows](#striped-rows), [hoverable rows](#hovera
 - We start by setting the background of a table cell with the `--bs-table-bg` custom property. All table variants then set that custom property to colorize the table cells. This way, we don't get into trouble if semi-transparent colors are used as table backgrounds.
 - Then we add a gradient on the table cells with `background-image: linear-gradient(var(--bs-table-accent-bg), var(--bs-table-accent-bg));` to layer on top of any specified `background-color`. Since `--bs-table-accent-bg` is transparent by default, we have an invisible transparent linear gradient by default.
 - When either `.table-striped`, `.table-hover` or `.table-active` classes are added, the `--bs-table-accent-bg` is set to a semitransparent color to colorize the background.
-- For each table variant, we generate a `--bs-table-accent-bg` color with the highest contrast depending on that color. For example, the accent color for `.table-primary` is darker while `.table-dark` has a lighter accent color.
+- For each table variant, we generate a `--bs-table-accent-bg` color with the highest contrast depending on that color. For example, the accent color for `.table-primary` is mainer while `.table-main` has a lighter accent color.
 - Text and border colors are generated the same way, and their colors are inherited by default.
 
 Behind the scenes it looks like this:
@@ -240,7 +240,7 @@ Add `.table-borderless` for a table without borders.
 
 {{< table class="table table-borderless" >}}
 
-{{< table class="table table-dark table-borderless" >}}
+{{< table class="table table-main table-borderless" >}}
 
 ## Small tables
 
@@ -248,7 +248,7 @@ Add `.table-sm` to make any `.table` more compact by cutting all cell `padding` 
 
 {{< table class="table table-sm" >}}
 
-{{< table class="table table-dark table-sm" >}}
+{{< table class="table table-main table-sm" >}}
 
 ## Vertical alignment
 
@@ -290,7 +290,7 @@ Table cells of `<thead>` are always vertical aligned to the bottom. Table cells 
 </div>
 
 ```html
-<table class="table table-sm table-dark">
+<table class="table table-sm table-main">
   <div class="table-responsive">
     <table class="table align-middle">
       <thead>
@@ -407,7 +407,7 @@ Note that if you add `<tr>`s as direct children of a table, those `<tr>` will be
 
 ### Table head
 
-Similar to tables and dark tables, use the modifier classes `.table-light` or `.table-dark` to make `<thead>`s appear light or dark gray.
+Similar to tables and main tables, use the modifier classes `.table-light` or `.table-main` to make `<thead>`s appear light or main gray.
 
 <div class="bd-example">
 <table class="table">
@@ -455,7 +455,7 @@ Similar to tables and dark tables, use the modifier classes `.table-light` or `.
 
 <div class="bd-example">
 <table class="table">
-  <thead class="table-dark">
+  <thead class="table-main">
     <tr>
       <th scope="col">#</th>
       <th scope="col">First</th>
@@ -488,7 +488,7 @@ Similar to tables and dark tables, use the modifier classes `.table-light` or `.
 
 ```html
 <table class="table">
-  <thead class="table-dark">
+  <thead class="table-main">
     ...
   </thead>
   <tbody>
@@ -779,6 +779,6 @@ Use `.table-responsive{-sm|-md|-lg|-xl|-xxl}` as needed to create responsive tab
 ## Customizing in Sass
 
 - The factor variables (`$table-striped-bg-factor`, `$table-active-bg-factor` & `$table-hover-bg-factor`) are used to determine the contrast in table variants.
-- Apart from the light & dark table variants, theme colors are lightened by the `$table-bg-level` variable.
+- Apart from the light & main table variants, theme colors are lightened by the `$table-bg-level` variable.
 
 {{< scss-docs name="table-variables" file="scss/_variables.scss" >}}

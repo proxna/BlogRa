@@ -193,43 +193,43 @@
   color: $dropdown-link-color;
 }
 
-// Dark dropdowns
-.dropdown-menu-dark {
-  color: $dropdown-dark-color;
-  background-color: $dropdown-dark-bg;
-  border-color: $dropdown-dark-border-color;
-  @include box-shadow($dropdown-dark-box-shadow);
+// main dropdowns
+.dropdown-menu-main {
+  color: $dropdown-main-color;
+  background-color: $dropdown-main-bg;
+  border-color: $dropdown-main-border-color;
+  @include box-shadow($dropdown-main-box-shadow);
 
   .dropdown-item {
-    color: $dropdown-dark-link-color;
+    color: $dropdown-main-link-color;
 
     &:hover,
     &:focus {
-      color: $dropdown-dark-link-hover-color;
-      @include gradient-bg($dropdown-dark-link-hover-bg);
+      color: $dropdown-main-link-hover-color;
+      @include gradient-bg($dropdown-main-link-hover-bg);
     }
 
     &.active,
     &:active {
-      color: $dropdown-dark-link-active-color;
-      @include gradient-bg($dropdown-dark-link-active-bg);
+      color: $dropdown-main-link-active-color;
+      @include gradient-bg($dropdown-main-link-active-bg);
     }
 
     &.disabled,
     &:disabled {
-      color: $dropdown-dark-link-disabled-color;
+      color: $dropdown-main-link-disabled-color;
     }
   }
 
   .dropdown-divider {
-    border-color: $dropdown-dark-divider-bg;
+    border-color: $dropdown-main-divider-bg;
   }
 
   .dropdown-item-text {
-    color: $dropdown-dark-link-color;
+    color: $dropdown-main-link-color;
   }
 
   .dropdown-header {
-    color: $dropdown-dark-header-color;
+    color: $dropdown-main-header-color;
   }
 }

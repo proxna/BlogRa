@@ -206,16 +206,16 @@ Add `data-bs-interval=""` to a `.carousel-item` to change the amount of time to 
 </div>
 {{< /example >}}
 
-## Dark variant
+## main variant
 
-Add `.carousel-dark` to the `.carousel` for darker controls, indicators, and captions. Controls have been inverted from their default white fill with the `filter` CSS property. Captions and controls have additional Sass variables that customize the `color` and `background-color`.
+Add `.carousel-main` to the `.carousel` for mainer controls, indicators, and captions. Controls have been inverted from their default white fill with the `filter` CSS property. Captions and controls have additional Sass variables that customize the `color` and `background-color`.
 
 {{< example >}}
-<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+<div id="carouselExamplemain" class="carousel carousel-main slide" data-bs-ride="carousel">
   <ol class="carousel-indicators">
-    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
-    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
-    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
+    <li data-bs-target="#carouselExamplemain" data-bs-slide-to="0" class="active"></li>
+    <li data-bs-target="#carouselExamplemain" data-bs-slide-to="1"></li>
+    <li data-bs-target="#carouselExamplemain" data-bs-slide-to="2"></li>
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="10000">
@@ -240,11 +240,11 @@ Add `.carousel-dark` to the `.carousel` for darker controls, indicators, and cap
       </div>
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
+  <a class="carousel-control-prev" href="#carouselExamplemain" role="button" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-bs-slide="next">
+  <a class="carousel-control-next" href="#carouselExamplemain" role="button" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </a>

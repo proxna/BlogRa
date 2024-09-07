@@ -6,7 +6,7 @@
     "function-disallowed-list": [
       "calc",
       "lighten",
-      "darken"
+      "mainen"
     ],
     "property-disallowed-list": [
       "border-radius",

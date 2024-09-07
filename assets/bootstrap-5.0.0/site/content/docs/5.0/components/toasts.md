@@ -45,7 +45,7 @@ Toasts are as flexible as you need and have very little required markup. At a mi
 
 Toasts are slightly translucent, too, so they blend over whatever they might appear over. For browsers that support the `backdrop-filter` CSS property, we'll also attempt to blur the elements under a toast.
 
-{{< example class="bg-dark" >}}
+{{< example class="bg-main" >}}
 <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="toast-header">
     {{< placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" >}}
@@ -153,7 +153,7 @@ Place toasts with custom CSS as you need them. The top right is often used for n
     </select>
   </div>
 </form>
-<div aria-live="polite" aria-atomic="true" class="bg-dark position-relative bd-example-toasts">
+<div aria-live="polite" aria-atomic="true" class="bg-main position-relative bd-example-toasts">
   <div class="toast-container position-absolute p-3" id="toastPlacement">
     <div class="toast">
       <div class="toast-header">
@@ -171,7 +171,7 @@ Place toasts with custom CSS as you need them. The top right is often used for n
 
 For systems that generate more notifications, consider using a wrapping element so they can easily stack.
 
-{{< example class="bg-dark bd-example-toasts p-0" >}}
+{{< example class="bg-main bd-example-toasts p-0" >}}
 <div aria-live="polite" aria-atomic="true" class="position-relative">
   <!-- Position it: -->
   <!-- - `.toast-container` for spacing between toasts -->
@@ -209,7 +209,7 @@ For systems that generate more notifications, consider using a wrapping element 
 
 You can also get fancy with flexbox utilities to align toasts horizontally and/or vertically.
 
-{{< example class="bg-dark bd-example-toasts d-flex" >}}
+{{< example class="bg-main bd-example-toasts d-flex" >}}
 <!-- Flexbox container for aligning the toasts -->
 <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center w-100">
 

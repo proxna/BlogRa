@@ -310,10 +310,10 @@ Mix and match with other components and utilities as needed.
 
 ## Color schemes
 
-Theming the navbar has never been easier thanks to the combination of theming classes and `background-color` utilities. Choose from `.navbar-light` for use with light background colors, or `.navbar-dark` for dark background colors. Then, customize with `.bg-*` utilities.
+Theming the navbar has never been easier thanks to the combination of theming classes and `background-color` utilities. Choose from `.navbar-light` for use with light background colors, or `.navbar-main` for main background colors. Then, customize with `.bg-*` utilities.
 
 <div class="bd-example">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-main bg-main">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -342,7 +342,7 @@ Theming the navbar has never been easier thanks to the combination of theming cl
     </div>
   </nav>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <nav class="navbar navbar-expand-lg navbar-main bg-primary">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
@@ -402,11 +402,11 @@ Theming the navbar has never been easier thanks to the combination of theming cl
 </div>
 
 ```html
-<nav class="navbar navbar-dark bg-dark">
+<nav class="navbar navbar-main bg-main">
   <!-- Navbar content -->
 </nav>
 
-<nav class="navbar navbar-dark bg-primary">
+<nav class="navbar navbar-main bg-primary">
   <!-- Navbar content -->
 </nav>
 
@@ -583,12 +583,12 @@ Sometimes you want to use the collapse plugin to trigger a container element for
 
 {{< example >}}
 <div class="collapse" id="navbarToggleExternalContent">
-  <div class="bg-dark p-4">
+  <div class="bg-main p-4">
     <h5 class="text-white h4">Collapsed content</h5>
     <span class="text-muted">Toggleable via the navbar brand.</span>
   </div>
 </div>
-<nav class="navbar navbar-dark bg-dark">
+<nav class="navbar navbar-main bg-main">
   <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>

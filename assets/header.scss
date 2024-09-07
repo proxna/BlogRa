@@ -1,6 +1,6 @@
 #header {
     padding-top: 26px;
-    background-color: $dark;
+    background-color: $main-color;
     text-align: center;
 
     .top-bar {
@@ -67,7 +67,7 @@
                 width: 50%;
                 border: 0px;
                 border-radius: 0;
-                background-color: $dark;
+                background-color: $main-color;
                 color: white;
 
                 &::placeholder {

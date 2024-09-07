@@ -1,23 +1,24 @@
+$main-color: #508fa0;
 $dark: #151515;
 
 // Dropdown stuff
-$dropdown-bg:                       $dark;
+$dropdown-bg:                       $main-color;
 $dropdown-link-color:               rgba(255,255,255,.55);
 $dropdown-link-hover-color:         rgba(255,255,255,.75);
-$dropdown-link-hover-bg:            $dark;
+$dropdown-link-hover-bg:            $main-color;
 $dropdown-divider-bg:               rgba(255,255,255,.55);
 
 // Pagination stuff
 $pagination-color:                  rgb(60, 60, 60);
-$pagination-hover-color:            $dark;
+$pagination-hover-color:            $main-color;
 $pagination-active-bg:              rgb(60, 60, 60);
 
 @import "bootstrap.scss";
 
 $fa-font-path: "fonts/";
-@import "fontawesome-free-5.15.1-web/scss/fontawesome.scss";
-@import "fontawesome-free-5.15.1-web/scss/solid.scss";
-@import "fontawesome-free-5.15.1-web/scss/brands.scss";
+@import "fontawesome-free-6.6.0-web/scss/fontawesome.scss";
+@import "fontawesome-free-6.6.0-web/scss/solid.scss";
+@import "fontawesome-free-6.6.0-web/scss/brands.scss";
 
 @font-face {
     font-family: 'AlfaSlabOne';

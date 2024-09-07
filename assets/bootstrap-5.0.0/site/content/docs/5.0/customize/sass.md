@@ -133,7 +133,7 @@ To remove colors from `$theme-colors`, or any other map, use `map-remove`. Be aw
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
-$theme-colors: map-remove($theme-colors, "info", "light", "dark");
+$theme-colors: map-remove($theme-colors, "info", "light", "main");
 
 // Optional
 @import "../node_modules/bootstrap/scss/root";
@@ -157,11 +157,11 @@ Next to the [Sass maps]({{< docsref "/customize/color#color-sass-maps" >}}) we h
 ```scss
 .custom-element {
   color: $gray-100;
-  background-color: $dark;
+  background-color: $main-color;
 }
 ```
 
-You can lighten or darken colors with Bootstrap's `tint-color()` and `shade-color()` functions. These functions will mix colors with black or white, unlike Sass' native `lighten()` and `darken()` functions which will change the lightness by a fixed amount, which often doesn't lead to the desired effect.
+You can lighten or mainen colors with Bootstrap's `tint-color()` and `shade-color()` functions. These functions will mix colors with black or white, unlike Sass' native `lighten()` and `mainen()` functions which will change the lightness by a fixed amount, which often doesn't lead to the desired effect.
 
 {{< scss-docs name="color-functions" file="scss/_functions.scss" >}}
 
@@ -181,7 +181,7 @@ In practice, you'd call the function and pass in the color and weight parameters
 
 In order to meet [WCAG 2.0 accessibility standards for color contrast](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html), authors **must** provide [a contrast ratio of at least 4.5:1](https://www.w3.org/WAI/WCAG20/quickref/20160105/Overview.php#visual-audio-contrast-contrast), with very few exceptions.
 
-An additional function we include in Bootstrap is the color contrast function, `color-contrast`. It utilizes the [WCAG 2.0 algorithm](https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests) for calculating contrast thresholds based on [relative luminance](https://www.w3.org/WAI/GL/wiki/Relative_luminance) in a `sRGB` colorspace to automatically return a light (`#fff`), dark (`#212529`) or black (`#000`) contrast color based on the specified base color. This function is especially useful for mixins or loops where you're generating multiple classes.
+An additional function we include in Bootstrap is the color contrast function, `color-contrast`. It utilizes the [WCAG 2.0 algorithm](https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests) for calculating contrast thresholds based on [relative luminance](https://www.w3.org/WAI/GL/wiki/Relative_luminance) in a `sRGB` colorspace to automatically return a light (`#fff`), main (`#212529`) or black (`#000`) contrast color based on the specified base color. This function is especially useful for mixins or loops where you're generating multiple classes.
 
 For example, to generate color swatches from our `$theme-colors` map:
 
@@ -205,7 +205,7 @@ You can also specify a base color with our color map functions:
 
 ```scss
 .custom-element {
-  color: color-contrast($dark); // returns `color: #fff`
+  color: color-contrast($main-color); // returns `color: #fff`
 }
 ```
 

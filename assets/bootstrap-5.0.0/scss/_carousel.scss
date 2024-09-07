@@ -205,19 +205,19 @@
   text-align: center;
 }
 
-// Dark mode carousel
+// main mode carousel
 
-.carousel-dark {
+.carousel-main {
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
-    filter: $carousel-dark-control-icon-filter;
+    filter: $carousel-main-control-icon-filter;
   }
 
   .carousel-indicators li {
-    background-color: $carousel-dark-indicator-active-bg;
+    background-color: $carousel-main-indicator-active-bg;
   }
 
   .carousel-caption {
-    color: $carousel-dark-caption-color;
+    color: $carousel-main-caption-color;
   }
 }

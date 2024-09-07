@@ -9,7 +9,7 @@ body_class: "bg-light"
 direction: rtl
 ---
 
-<header class="bd-header bg-dark py-3 d-flex align-items-stretch border-bottom border-dark">
+<header class="bd-header bg-main py-3 d-flex align-items-stretch border-bottom border-main">
   <div class="container-fluid d-flex align-items-center">
     <h1 class="d-flex align-items-center fs-4 text-white mb-0">
       <img src="/docs/5.0/assets/brand/bootstrap-logo-white.svg" width="38" height="30" class="me-3" alt="Bootstrap">
@@ -208,7 +208,7 @@ direction: rtl
         {{< /example >}}
 
         {{< example show_markup="false" >}}
-        <table class="table table-dark table-borderless">
+        <table class="table table-main table-borderless">
           <thead>
           <tr>
             <th scope="col">#</th>
@@ -691,16 +691,16 @@ direction: rtl
         <p class="h2">عنوان المثال <span class="badge bg-secondary">جديد</span></p>
         <p class="h3">عنوان المثال <span class="badge bg-success">جديد</span></p>
         <p class="h4">عنوان المثال <span class="badge bg-danger">جديد</span></p>
-        <p class="h5">عنوان المثال <span class="badge bg-warning text-dark">جديد</span></p>
-        <p class="h6">عنوان المثال <span class="badge bg-info text-dark">جديد</span></p>
-        <p class="h6">عنوان المثال <span class="badge bg-light text-dark">جديد</span></p>
-        <p class="h6">عنوان المثال <span class="badge bg-dark">جديد</span></p>
+        <p class="h5">عنوان المثال <span class="badge bg-warning text-main">جديد</span></p>
+        <p class="h6">عنوان المثال <span class="badge bg-info text-main">جديد</span></p>
+        <p class="h6">عنوان المثال <span class="badge bg-light text-main">جديد</span></p>
+        <p class="h6">عنوان المثال <span class="badge bg-main">جديد</span></p>
         {{< /example >}}
 
         {{< example show_markup="false" >}}
         {{< badge.inline >}}
         {{- range (index $.Site.Data "theme-colors") }}
-        <span class="badge rounded-pill bg-{{ .name }}{{ if or (eq .name "light") (eq .name "warning") (eq .name "info") }} text-dark{{ end }}">{{ .name | title }}</span>{{- end -}}
+        <span class="badge rounded-pill bg-{{ .name }}{{ if or (eq .name "light") (eq .name "warning") (eq .name "info") }} text-main{{ end }}">{{ .name | title }}</span>{{- end -}}
         {{< /badge.inline >}}
         {{< /example >}}
       </div>
@@ -1245,13 +1245,13 @@ direction: rtl
               </ul>
               <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="بحث" aria-label="بحث">
-                <button class="btn btn-outline-dark" type="submit">بحث</button>
+                <button class="btn btn-outline-main" type="submit">بحث</button>
               </form>
             </div>
           </div>
         </nav>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary mt-5">
+        <nav class="navbar navbar-expand-lg navbar-main bg-primary mt-5">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">
               <img src="/docs/{{< param docs_version >}}/assets/brand/bootstrap-logo-white.svg" width="38" height="30" class="d-inline-block align-top" alt="Bootstrap" loading="lazy">
@@ -1392,10 +1392,10 @@ direction: rtl
           <div class="progress-bar bg-success w-25" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
         </div>
         <div class="progress mb-3">
-          <div class="progress-bar bg-info text-dark w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+          <div class="progress-bar bg-info text-main w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
         </div>
         <div class="progress mb-3">
-          <div class="progress-bar bg-warning text-dark w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+          <div class="progress-bar bg-warning text-main w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
         </div>
         <div class="progress">
           <div class="progress-bar bg-danger w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
@@ -1489,7 +1489,7 @@ direction: rtl
       </div>
 
       <div>
-        {{< example show_markup="false" class="bg-dark p-5 align-items-center" >}}
+        {{< example show_markup="false" class="bg-main p-5 align-items-center" >}}
         <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
           <div class="toast-header">
             {{< placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" >}}

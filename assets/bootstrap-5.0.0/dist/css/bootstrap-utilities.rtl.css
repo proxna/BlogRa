@@ -261,7 +261,7 @@
   border-color: #f8f9fa !important;
 }
 
-.border-dark {
+.border-main {
   border-color: #212529 !important;
 }
 
@@ -1047,7 +1047,7 @@
   color: #f8f9fa !important;
 }
 
-.text-dark {
+.text-main {
   color: #212529 !important;
 }
 
@@ -1119,7 +1119,7 @@
   background-color: #f8f9fa !important;
 }
 
-.bg-dark {
+.bg-main {
   background-color: #212529 !important;
 }
 

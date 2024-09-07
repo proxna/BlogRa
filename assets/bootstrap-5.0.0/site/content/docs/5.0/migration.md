@@ -87,7 +87,7 @@ Breakpoints specific variants are consequently renamed too (eg. `.text-md-start`
 
 ### Sass
 
-- The color system which worked with `color-level()` and `$theme-color-interval` was removed in favor of a new color system. All `lighten()` and `darken()` functions in our codebase are replaced by `tint-color()` and `shade-color()`. These functions will mix the color with either white or black instead of changing its lightness by a fixed amount. The `scale-color()` (changed to `shift-color()` in Beta 1) will either tint or shade a color depending on whether its weight parameter is positive or negative. [See #30622](https://github.com/twbs/bootstrap/pull/30622) for more details.
+- The color system which worked with `color-level()` and `$theme-color-interval` was removed in favor of a new color system. All `lighten()` and `mainen()` functions in our codebase are replaced by `tint-color()` and `shade-color()`. These functions will mix the color with either white or black instead of changing its lightness by a fixed amount. The `scale-color()` (changed to `shift-color()` in Beta 1) will either tint or shade a color depending on whether its weight parameter is positive or negative. [See #30622](https://github.com/twbs/bootstrap/pull/30622) for more details.
 - Spinners now honor `prefers-reduced-motion: reduce` by slowing down animations. [See #31882](https://github.com/twbs/bootstrap/pull/31882).
 
 ### Reboot
@@ -166,14 +166,14 @@ Breakpoints specific variants are consequently renamed too (eg. `.text-md-start`
 #### Carousel
 
 - Replaced chevron icons for carousel controls with new SVGs from [Bootstrap Icons]({{< param "icons" >}}).
-- Added new [`.carousel-dark` variant]({{< docsref "/components/carousel#dark-variant" >}}) for dark text, controls, and indicators (great for lighter backgrounds).
+- Added new [`.carousel-main` variant]({{< docsref "/components/carousel#main-variant" >}}) for main text, controls, and indicators (great for lighter backgrounds).
 
 #### Close button
 
 - Renamed `.close` to `.btn-close` for a less generic name.
 - Close buttons now use a `background-image` (embedded SVG) instead of a `&times;` in the HTML, allowing for easier customization without the need to touch your markup.
 - Added new variables to better control the customization.
-- Added new `.btn-close-white` variant that uses `filter: invert(1)` to enable higher contrast dismiss icons against darker backgrounds.
+- Added new `.btn-close-white` variant that uses `filter: invert(1)` to enable higher contrast dismiss icons against mainer backgrounds.
 
 #### Collapse
 
@@ -181,9 +181,9 @@ Breakpoints specific variants are consequently renamed too (eg. `.text-md-start`
 
 #### Dropdowns
 
-- Added new `.dropdown-menu-dark` variant and associated variables for on-demand dark dropdowns.
+- Added new `.dropdown-menu-main` variant and associated variables for on-demand main dropdowns.
 - Added new variable for `$dropdown-padding-x`.
-- Darkened the dropdown divider for improved contrast.
+- mainened the dropdown divider for improved contrast.
 
 #### Navs
 
@@ -272,7 +272,7 @@ Changes to our source Sass files and compiled CSS.
 - Ditch the Sass map merges, which makes it easier to remove redundant values. Keep in mind you now have to define all values in the Sass maps like `$theme-colors`. Check out how to deal with [Sass maps]({{< docsref "/customize/sass#maps-and-loops" >}}).
 - `color-yiq()` function and related variables are renamed to `color-contrast()` since it's not related to YIQ colorspace anymore. [See #30168.](https://github.com/twbs/bootstrap/pull/30168/)
   - `$yiq-contrasted-threshold` is renamed to `$min-contrast-ratio`.
-  - `$yiq-text-dark` and `$yiq-text-light` are respectively renamed to `$color-contrast-dark` and `$color-contrast-light`.
+  - `$yiq-text-main` and `$yiq-text-light` are respectively renamed to `$color-contrast-main` and `$color-contrast-light`.
 - Linear gradients are simplified when gradients are enabled and therefore, `gradient-bg()` now only accepts an optional `$color` parameter.
 - The `bg-gradient-variant()` mixin is removed since the `.bg-gradient` class can now be used to add gradients to elements instead of the `.bg-gradient-*` classes.
 - The `media-breakpoint-down()` uses the breakpoint itself instead of the next breakpoint. Use `media-breakpoint-down(lg)` instead of `media-breakpoint-down(md)` to target viewports smaller than the `lg` breakpoint.
@@ -316,7 +316,7 @@ Changes to Reboot, typography, tables, and more.
 - Reset default horizontal `padding-left` on `<ul>` and `<ol>` elements from browser default `40px` to `2rem`.
 - Simplified table styles (no more odd top border) and tightened cell padding.
 - Nested tables do not inherit styles anymore.
-- `.thead-light` and `.thead-dark` are dropped in favor of the `.table-*` variant classes which can be used for all table elements (`thead`, `tbody`, `tfoot`, `tr`, `th` and `td`).
+- `.thead-light` and `.thead-main` are dropped in favor of the `.table-*` variant classes which can be used for all table elements (`thead`, `tbody`, `tfoot`, `tr`, `th` and `td`).
 - The `table-row-variant()` mixin is renamed to `table-variant()` and accepts only 2 parameters: `$color` (colon name) and `$value` (color code). The border color and accent colors are automatically calculated based on the table factor variables.
 - Split table cell padding variables into `-y` and `-x`.
 - Dropped `.pre-scrollable` class. [See #29135](https://github.com/twbs/bootstrap/pull/29135)
@@ -368,7 +368,7 @@ Changes to Reboot, typography, tables, and more.
 
 #### Alerts
 
-- Removed auto-darkening of `<hr>` elements in `.alert-*` class variants. `<hr>`s use `rgba()` for their color, so these should naturally blend anyway.
+- Removed auto-mainening of `<hr>` elements in `.alert-*` class variants. `<hr>`s use `rgba()` for their color, so these should naturally blend anyway.
 
 #### Badges
 

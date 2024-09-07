@@ -1,5 +1,5 @@
 #featured {
-    background-color: $dark;
+    background-color: $main-color;
     padding-top: 1rem;
 }
 
@@ -9,7 +9,7 @@
     background-clip: content-box;
 
     ::after {
-        background-color: $dark;
+        background-color: $main-color;
     }
 
     .grid-item::before {

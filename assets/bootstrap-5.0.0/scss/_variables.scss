@@ -56,7 +56,7 @@ $colors: (
   "cyan":       $cyan,
   "white":      $white,
   "gray":       $gray-600,
-  "gray-dark":  $gray-800
+  "gray-main":  $gray-800
 ) !default;
 // scss-docs-end colors-map
 
@@ -67,7 +67,7 @@ $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
-$dark:          $gray-900 !default;
+$main-color:          $gray-900 !default;
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
@@ -78,16 +78,16 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "main":       $main-color
 ) !default;
 // scss-docs-end theme-colors-map
 
-// The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
+// The contrast ratio to reach against white, to determine if color changes from "light" to "main". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
 // See https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast
 $min-contrast-ratio:   4.5 !default;
 
-// Customize the light and dark text colors for use in our color contrast function.
-$color-contrast-dark:      $black !default;
+// Customize the light and main text colors for use in our color contrast function.
+$color-contrast-main:      $black !default;
 $color-contrast-light:     $white !default;
 
 // fusv-disable
@@ -542,7 +542,7 @@ $table-variants: (
   "warning":    shift-color($warning, $table-bg-scale),
   "danger":     shift-color($danger, $table-bg-scale),
   "light":      $light,
-  "dark":       $dark,
+  "main":       $main-color,
 ) !default;
 // scss-docs-end table-variables
 
@@ -888,12 +888,12 @@ $navbar-toggler-border-radius:      $btn-border-radius !default;
 $navbar-toggler-focus-width:        $btn-focus-width !default;
 $navbar-toggler-transition:         box-shadow .15s ease-in-out !default;
 
-$navbar-dark-color:                 rgba($white, .55) !default;
-$navbar-dark-hover-color:           rgba($white, .75) !default;
-$navbar-dark-active-color:          $white !default;
-$navbar-dark-disabled-color:        rgba($white, .25) !default;
-$navbar-dark-toggler-icon-bg:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
-$navbar-dark-toggler-border-color:  rgba($white, .1) !default;
+$navbar-main-color:                 rgba($white, .55) !default;
+$navbar-main-hover-color:           rgba($white, .75) !default;
+$navbar-main-active-color:          $white !default;
+$navbar-main-disabled-color:        rgba($white, .25) !default;
+$navbar-main-toggler-icon-bg:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-main-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+$navbar-main-toggler-border-color:  rgba($white, .1) !default;
 
 $navbar-light-color:                rgba($black, .55) !default;
 $navbar-light-hover-color:          rgba($black, .7) !default;
@@ -904,8 +904,8 @@ $navbar-light-toggler-border-color: rgba($black, .1) !default;
 
 $navbar-light-brand-color:                $navbar-light-active-color !default;
 $navbar-light-brand-hover-color:          $navbar-light-active-color !default;
-$navbar-dark-brand-color:                 $navbar-dark-active-color !default;
-$navbar-dark-brand-hover-color:           $navbar-dark-active-color !default;
+$navbar-main-brand-color:                 $navbar-main-active-color !default;
+$navbar-main-brand-hover-color:           $navbar-main-active-color !default;
 
 
 // Dropdowns
@@ -942,18 +942,18 @@ $dropdown-item-padding-x:           $spacer !default;
 $dropdown-header-color:             $gray-600 !default;
 $dropdown-header-padding:           $dropdown-padding-y $dropdown-item-padding-x !default;
 
-$dropdown-dark-color:               $gray-300 !default;
-$dropdown-dark-bg:                  $gray-800 !default;
-$dropdown-dark-border-color:        $dropdown-border-color !default;
-$dropdown-dark-divider-bg:          $dropdown-divider-bg !default;
-$dropdown-dark-box-shadow:          null !default;
-$dropdown-dark-link-color:          $dropdown-dark-color !default;
-$dropdown-dark-link-hover-color:    $white !default;
-$dropdown-dark-link-hover-bg:       rgba($white, .15) !default;
-$dropdown-dark-link-active-color:   $dropdown-link-active-color !default;
-$dropdown-dark-link-active-bg:      $dropdown-link-active-bg !default;
-$dropdown-dark-link-disabled-color: $gray-500 !default;
-$dropdown-dark-header-color:        $gray-500 !default;
+$dropdown-main-color:               $gray-300 !default;
+$dropdown-main-bg:                  $gray-800 !default;
+$dropdown-main-border-color:        $dropdown-border-color !default;
+$dropdown-main-divider-bg:          $dropdown-divider-bg !default;
+$dropdown-main-box-shadow:          null !default;
+$dropdown-main-link-color:          $dropdown-main-color !default;
+$dropdown-main-link-hover-color:    $white !default;
+$dropdown-main-link-hover-bg:       rgba($white, .15) !default;
+$dropdown-main-link-active-color:   $dropdown-link-active-color !default;
+$dropdown-main-link-active-bg:      $dropdown-link-active-bg !default;
+$dropdown-main-link-disabled-color: $gray-500 !default;
+$dropdown-main-header-color:        $gray-500 !default;
 
 
 // Pagination
@@ -1287,9 +1287,9 @@ $carousel-control-next-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://
 $carousel-transition-duration:       .6s !default;
 $carousel-transition:                transform $carousel-transition-duration ease-in-out !default; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
 
-$carousel-dark-indicator-active-bg:  $black !default;
-$carousel-dark-caption-color:        $black !default;
-$carousel-dark-control-icon-filter:  invert(1) grayscale(100) !default;
+$carousel-main-indicator-active-bg:  $black !default;
+$carousel-main-caption-color:        $black !default;
+$carousel-main-control-icon-filter:  invert(1) grayscale(100) !default;
 
 
 // Spinners
