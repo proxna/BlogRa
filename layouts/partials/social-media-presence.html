@@ -19,6 +19,13 @@
             <i class="fab fa-youtube"></i></a>
     </li>
     {{ end }}
+    
+    {{ with .Site.Params.Tiktok }}
+    <li>
+        <a href="{{ . }}" target="_blank">
+            <i class="fab fa-tiktok"></i></a>
+    </li>
+    {{ end }}
 
     {{ with .Site.Params.Instagram }}
     <li>
